@@ -1,0 +1,12 @@
+let debug = import! std.debug
+let demo = import! demo
+
+let my_callback context str =
+    debug.trace ("Ohai " ++ str)
+
+let init context =
+    demo.register_callback context "my_string" my_callback
+    demo.register_callback context "my_other_regex" my_callback
+    debug.trace "Callback registered"
+
+{ init }
