@@ -73,6 +73,8 @@ fn do_it() {
         }
     }
 
+    // Temporary mitigation
+    //context.callbacks.lock().unwrap().clear();
 
 }
 
