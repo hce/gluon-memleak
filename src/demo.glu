@@ -7,10 +7,6 @@ let my_callback context str =
     let b = a + a
     let c = a * b
     let d = a * b * c
-    let e = a * b * c * d
-    let f = a * b * c * d * e
-    let g = a * b * c * d * e * f
-    let h = a * b * c * d * e * f * g
     "foo"
     ()
 
