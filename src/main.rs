@@ -69,7 +69,6 @@ fn do_it() {
     for _i in 0..1000000 {
         let mut mr = context.callbacks.lock().unwrap();
         for j in 0 .. mr.len() {
-            eprintln!("{}", j);
             let callback = mr.get_mut(j).unwrap();
             let mut cc = context.clone();
             cc.callbacks = Arc::new(Mutex::new(Vec::new()));
